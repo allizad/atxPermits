@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CODETX</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+      <script type="text/javascript" src="controller.js"></script>
+  </head>
+  <body>
+  
+<div class="container-fluid">
+  
+<div class="row">
+  <h1 style="text-align: center">Austin Building Permits</h1>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-1"><br></div>
+  <div class="col-md-10">
+
+  <div class="container-fluid table">
+
+    <div ng-app="">
+    <table>
+      <div>
+      <thead>
+        <tr>
+          <div ng-controller="HeaderCtrl">
+          <th>{{data.message}}</th>
+          </div>
+        </tr>
+      </thead>
+      </div>
+    <tbody>
+<!--             <tr ng-repeat="item in pagedItems[currentPage] | orderBy:sortingOrder:reverse">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.field3}}</td>
+                <td>{{item.field4}}</td>
+                <td>{{item.field5}}</td>
+            </tr> -->
+        </tbody>
+        </table>
+    </div>
+
+  </div>
+
+  <div class="col-md-1"><br></div>
+</div>
+</div>
+
+
+
+  </body>
+</html>
